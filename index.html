@@ -1,0 +1,107 @@
+<html>
+    <head> <!-- Informações de cabeçalho do site, as propriedades internas do site -->
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, user-scalable=0" /> 
+        <link rel="sortcut icon" href="assets/images/favicon.gif" type="image/gif">
+        <link rel="stylesheet" type="text/css" href="css/template.css" />
+        <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous" ></script>
+        <title>Exercício - Formulário</title>
+    </head>
+    <body>
+        <div id="container"> 
+            <header>
+                <div class="logo">
+                    <a href=""><img src="images/nasa.png" /></a>
+                </div>
+                <div class="titulo">
+                    <h1>Form Page</h1>
+                </div>
+            </header>
+            <section>
+                <div class="form_container"> 
+                    <div class="form_login"> 
+                        <h2>Login</h2>
+                        <div class="form_login_container">
+                            <form method="POST">
+                                <div class="input_field">
+                                     <input type="text" name="username" id="username" placeholder="Enter Your Username" >
+                                     <div class="underline"></div>  
+                                </div>
+                                <div class="input_field">
+                                     <input type="password" name="password" id="password" placeholder="Enter Your Password" >
+                                     <div class="underline"></div>  
+                                 </div>
+                                 <input type="submit" value="Continue">
+                            </form>
+                            <div class="form_login_footer">
+                                 <span>Or Connect With Social Media</span>
+                                 <div class="social_fields">
+                                     <div class="social_field twitter">
+                                         <a href="#">
+                                             <i class="fab fa-twitter"></i>
+                                             Sign in with Twitter
+                                         </a>
+                                     </div>
+                                     <div class="social_field facebook">
+                                         <a href="#">
+                                             <i class="fab fa-facebook-f"></i>
+                                             Sign in with Facebook
+                                         </a>
+                                     </div>  
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_dados"> 
+                        <h2>Registration</h2>
+                        <div class="form_login_container">
+                            <form method="POST">
+                                <div class="input_field">
+                                     <input type="text" name="name" id="name" placeholder="Enter Your Name" >
+                                     <div class="underline"></div>  
+                                </div>
+                                <div class="input_field">
+                                     <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name" >
+                                     <div class="underline"></div>  
+                                 </div>
+                                 <div class="input_field">
+                                     <input type="text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter Your E-mail" >
+                                     <div class="underline"></div>  
+                                 </div>
+                                 <div class="input_field">
+                                     <input type="number" name="age" id="age" step="2" placeholder="Enter Your Age" >
+                                     <div class="underline"></div>  
+                                 </div>
+                                 <div class="input_field">
+                                     <input type="date" name="bdaydate" id="bdaydate" min="2021-10-23" value="Enter Yor Birth Date" placeholder="Birth Date" >
+                                     <div class="underline"></div>  
+                                 </div>
+                                 <h2 class="photo">Send the Photo</h2>
+                                 <form>
+                                     <div>
+                                         <label for="arquivo">Send</label>
+                                         <input type="file" name="arquivo" id="arquivo">
+                                     </div>
+                                 </form>
+                                 <input class="continue" type="submit" value="Continue">
+                             </form>
+                        </div>
+                    </div>
+                </div>  
+            </section>  
+            <footer>
+                <div class="footer_container">
+                    <div class="footer_copy">
+                        Developed by: Lucas Natan | <a href="">Contact</a> | <a href="">Terms of Use</a> | <a href="">Privacy Policy</a> | <a href="">Exploitation Policy</a> 
+                    </div>
+                    <div class="footer_rede">
+                        <a href=""><img src="images/instagram.png"></a>
+                        <a href=""><img src="images/facebook.png"></a>
+                        <a href=""><img src="images/twitter.png"></a>
+                        <a href=""><img src="images/youtube.jpg"></a>
+                    </div>
+                </div>      
+            </footer>
+        </div>  
+    </body>
+</html>

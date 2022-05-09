@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    font-family: "Poppins",Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0; 
+    border: 0;
+}
+    #container {
+    justify-content: center;
+    background-image: linear-gradient( rgba(255,255,255,.6) 0%,rgba(255,255,255,.6) 100%),
+    url('../images/andromeda.jpg'); 
+    background-position:center; 
+    background-size:cover; 
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    width: 80px;
+    height: auto;
+}
+.titulo h1{
+    color: #03326c;
+    font-size: 25px;
+    margin-top: 32px;
+    
+
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+.form_container{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 90vw;
+}
+
+.form_container .form_login, .form_dados { 
+    display: flex;
+    flex: 1;
+}
+.form_container .form_login {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+}
+.form_login .form_login_container { 
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+}
+div h2 { 
+    color: #03326c;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.input_field input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.input_field input::placeholder{
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.input_field:first-child { 
+    margin-bottom: 5px;
+}
+
+.input_field .underline {
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: #03326c;
+}
+
+form input[type="submit"] {
+    border: 0;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    background: linear-gradient(to left, #064ca1, #03326c);
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(to right, #064ca1, #03326c);
+}
+
+.form_login_footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.form_login_footer span {
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 10px;
+    text-align: center;
+}
+
+.form_login_footer .social_field a {
+    text-decoration: none;
+    color: white;
+}
+
+.form_login_footer .social_field {
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.form_login_footer .social_field a i { 
+    margin: 5px;
+    width: 10px;
+}
+
+.form_login_footer .social_field.twitter {
+    background: linear-gradient(to right, #56a7f2, #468aca);
+}
+
+.form_login_footer .social_field.facebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+.form_container .form_dados {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.form_dados .form_login_container { 
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 5px 15px rgba(248, 246, 246, 0.2);
+        border-radius: 8px;
+}
+
+.form_login_container .photo {
+    font-size: 14px;
+    color: #1e3c72;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    display: block;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: linear-gradient(to left, #d40808 ,#940907 );
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+label:hover {
+    background: linear-gradient(to right, #d40808,#940907);
+}
+
+.continue {
+    border: 0;
+    padding: 5px;
+    width: 100%;
+    background: linear-gradient(to left, #064ca1, #03326c);
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.continue:hover {
+    background: linear-gradient(to right, #064ca1, #03326c);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer_container {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer_copy {
+    font-size: 12px;
+}
+
+.footer_copy a {
+    text-decoration: none;
+    color: #03326c;
+    font-weight: normal;
+}
+
+.footer_copy a:hover {
+    text-decoration: underline;
+}
+
+.footer_rede img {
+    width: 20px;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 20%);
+    border-radius: 8px;
+    
+}
+
+/* Responsividade do Formulário */
+@media (max-width: 600px) {
+   
+    #container {
+        justify-content: center;
+        background-image: linear-gradient( rgba(255,255,255,.6) 0%,rgba(255,255,255,.6) 100%),
+        url('../images/andromedaTel.jpg'); 
+        background-position:center; 
+        background-size:cover; 
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    body {
+        background-color: rgb(231, 227, 227);
+    }
+   
+    .titulo h1 {
+        font-size: 30px;
+        margin-top: 32px;
+        font-size: 25px;
+    }
+        
+    .form_container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        position: relative;
+    }
+
+    footer .footer_container {
+        flex-direction: column-reverse; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer_rede {
+        margin-bottom: 30px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .footer_copy {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+}
