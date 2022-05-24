@@ -255,7 +255,7 @@ footer {
         background-image: linear-gradient( rgba(255,255,255,.6) 0%,rgba(255,255,255,.6) 100%),
         url('../images/andromedaTel.jpg'); 
         background-position:center; 
-        background-size:cover; 
+        background-size:contain; 
         width: 100vw;
         height: 100vh;
         position: relative;
@@ -276,6 +276,7 @@ footer {
         justify-content: center; 
         align-items: center; 
         flex-direction: column;
+        margin-top: -20px;
     }
 
     .footer_container {
@@ -285,21 +286,22 @@ footer {
 
     footer .footer_container {
         flex-direction: column-reverse; 
-        margin-top: 20px;
+        margin-top: 15px;
         margin-bottom: 20px;
     }
 
     .footer_rede {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 25px;
+        margin-top: 20px;
     }
     .footer_copy {
         font-size: 12px;
         margin-left: 8px;
+        margin-top: 1px;
     }
 }
